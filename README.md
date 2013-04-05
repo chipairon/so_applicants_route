@@ -1,4 +1,8 @@
 so_applicants_route
 ===================
 
-Trying to help out in a StackOverflow question about Ajax routing problem with nested resources.
+StackOverflow question about a setup for ajax calls with routes for
+emmbeded resources:
+http://stackoverflow.com/questions/15779415/rails-uninitialized-constant-routing-error
+
+I can't reproduce the error but hope this helps to figure it out.
