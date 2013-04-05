@@ -1,0 +1,19 @@
+<h1>Applications</h1>
+<ul class="applications">
+  <% @applications.each do |application| %>
+    <li>
+      <%= application.title %>
+      <ul class="applicants" id="<%= application.id %>">
+        <% application.applicants.each do |applicant| %>
+          <li>
+            <%= applicant.name %>
+            <%#<%= link_to "Archive", archived_application_applicants_path(application_id: application.id, id: applicant.id), method: "put"  %>%>
+            <div class="archive" id="<%= applicant.id %>">
+              Ajax Archive: Clicky Clicky!!!
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </li>
+  <% end %>
+</ul>
